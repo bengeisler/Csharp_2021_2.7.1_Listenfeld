@@ -141,5 +141,19 @@ namespace Listenfeld
 			// Einfachste Möglichkeit:
 			lstAnzeige.Items.Clear();
 		}
+
+		private void btnEinfügen_Click(object sender, EventArgs e)
+		{
+			// Abfrage, ob ein Element ausgewählt wurde
+			// UND
+			// ob der eingegebene Text nicht leer ist
+			if (lstAnzeige.SelectedIndex > -1 && txtEingabe.Text != "")
+			{
+				// Neues Element einfügen
+				// 1. Parameter: Index, an der das Element eingefügt wird
+				// 2. Parameter: Element, das eingefügt werden soll
+				lstAnzeige.Items.Insert(lstAnzeige.SelectedIndex, txtEingabe.Text);
+			}
+		}
 	}
 }

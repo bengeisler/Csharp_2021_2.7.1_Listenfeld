@@ -39,6 +39,8 @@ namespace Listenfeld
 			this.btnIndex3Auswählen = new System.Windows.Forms.Button();
 			this.btnLöschen = new System.Windows.Forms.Button();
 			this.btnAlleLöschen = new System.Windows.Forms.Button();
+			this.txtEingabe = new System.Windows.Forms.TextBox();
+			this.btnEinfügen = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lstAnzeige
@@ -137,11 +139,30 @@ namespace Listenfeld
 			this.btnAlleLöschen.UseVisualStyleBackColor = true;
 			this.btnAlleLöschen.Click += new System.EventHandler(this.btnAlleLöschen_Click);
 			// 
+			// txtEingabe
+			// 
+			this.txtEingabe.Location = new System.Drawing.Point(219, 132);
+			this.txtEingabe.Name = "txtEingabe";
+			this.txtEingabe.Size = new System.Drawing.Size(100, 20);
+			this.txtEingabe.TabIndex = 10;
+			// 
+			// btnEinfügen
+			// 
+			this.btnEinfügen.Location = new System.Drawing.Point(347, 128);
+			this.btnEinfügen.Name = "btnEinfügen";
+			this.btnEinfügen.Size = new System.Drawing.Size(75, 23);
+			this.btnEinfügen.TabIndex = 11;
+			this.btnEinfügen.Text = "Einfügen";
+			this.btnEinfügen.UseVisualStyleBackColor = true;
+			this.btnEinfügen.Click += new System.EventHandler(this.btnEinfügen_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(800, 447);
+			this.Controls.Add(this.btnEinfügen);
+			this.Controls.Add(this.txtEingabe);
 			this.Controls.Add(this.btnAlleLöschen);
 			this.Controls.Add(this.btnLöschen);
 			this.Controls.Add(this.btnIndex3Auswählen);
@@ -172,6 +193,8 @@ namespace Listenfeld
 		private System.Windows.Forms.Button btnIndex3Auswählen;
 		private System.Windows.Forms.Button btnLöschen;
 		private System.Windows.Forms.Button btnAlleLöschen;
+		private System.Windows.Forms.TextBox txtEingabe;
+		private System.Windows.Forms.Button btnEinfügen;
 	}
 }
 
